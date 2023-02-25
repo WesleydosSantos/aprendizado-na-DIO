@@ -2,36 +2,41 @@
 package br.com.wesley.estrutura.no;
 
 
-public class No {
+
+// refatorando  classe nó  para generic
+
+
+
+public class No <T> {
   
     
 
-    private String conteudo;
-    private No proximoNO;
+    private T conteudo;
+    private No<T> proximoNO;
 
 
-    public No(String conteudo) {
+    public No(T conteudo) {
         this.proximoNO= null;
         this.conteudo = conteudo;
     }
 
 
-    public String getConteudo() {
+    public T getConteudo() {
         return conteudo;
     }
 
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
 
-    public No getProximoNO() {
+    public No<T> getProximoNO() {
         return proximoNO;
     }
 
 
-    public void setProximoNO(N proximoNO) {
+    public void setProximoNO(No<T> proximoNO) {
         this.proximoNO = proximoNO;
     }
     
