@@ -5,7 +5,7 @@ package br.com.wesley.estrutura.listaEncadeada;
 public class No<T> {
     
     private T conteudo;
-    private No proximoNo;
+    private No<T> proximoNo;
 
     public No(){
 
