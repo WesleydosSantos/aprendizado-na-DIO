@@ -62,6 +62,7 @@ public class ListaDuplamenteEncadeada<T> {
             }
         }
         tamanhoLista--;
+        
     }
 
 
